@@ -1,0 +1,33 @@
+﻿#include "winver.h"
+#include "../mappver.h"
+
+IDI_ICON1 ICON DISCARDABLE "/icons/yoda.ico"
+
+VS_VERSION_INFO VERSIONINFO
+	FILEVERSION 	VER_MAJOR,VER_MINOR,VER_STAGE,VER_APPEND
+	PRODUCTVERSION	VER_MAJOR,VER_MINOR,VER_STAGE,VER_APPEND
+    FILEFLAGSMASK	0x3fL
+	FILEFLAGS		0x0L
+    FILEOS			VOS__WINDOWS32
+    FILETYPE		VFT_APP
+    FILESUBTYPE		0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"		// 中文（中国） "000004b0" 中性
+        BEGIN
+			VALUE "CompanyName",		STR_Corporation
+			VALUE "FileDescription",	STR_Description
+			VALUE "FileVersion",		STR_Version
+			VALUE "LegalCopyright",		STR_Copyright
+			VALUE "InternalName",		STR_AppName
+			VALUE "OriginalFilename",	STR_AppName
+			VALUE "ProductName",		STR_AppName
+			VALUE "ProductVersion",		STR_Version
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+		VALUE "Translation", 0x804, 1200
+    END
+END
