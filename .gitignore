@@ -32,4 +32,4 @@
 
 #build dir
 /build-Qt_4_8_6-Release
-*.usr
+*.user
